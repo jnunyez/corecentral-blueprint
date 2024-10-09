@@ -1,0 +1,20 @@
+= Deviations/Exceptions Summary
+
+= Support Exceptions
+
+This design relies on the following support exceptions: 
+
+* Table with links for SUPPORTEX.
+
+= Deviations from Red Hat Telco Reference Design Specification
+
+== Deviations from Core Reference Design Specification
+
+This solution deviates from the Telco-5G-RAN 4.14 Reference Design Specification in the following ways:
+
+== Deviations from Hub Reference Design Specification
+
+This solution deviates from the Hub 4.16 Reference Design Specification in the following ways:
+
+= Deviations from Red Hat NPSS Telco Network Cloud Reference Architecture
+
