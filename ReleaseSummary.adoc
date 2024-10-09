@@ -1,20 +1,76 @@
 = Deviations/Exceptions Summary
 
-= Support Exceptions
+First sections details 
 
-This design relies on the following support exceptions: 
+== Support Exceptions
 
-* Table with links for SUPPORTEX.
+This solution specified relies on the following support exceptions: 
 
-= Deviations from Red Hat Telco Reference Design Specification
+[options="header", cols="1,1,1a"]
+|===
+|Support Exception ID |Required for |Status/Comments
+|https://issues.redhat.com/browse/SUPPORTEX-xywz[SUPPORTEX-xywz] |
+[Core Engagement]: Support for Feature X for Blueprint release Ra and Rb. | Under review.
+|===
 
-== Deviations from Core Reference Design Specification
+[page-layout=portrait]
+<<<
 
-This solution deviates from the Telco-5G-RAN 4.14 Reference Design Specification in the following ways:
+== Deviations from Red Hat Telco Core Reference Design Specification
 
-== Deviations from Hub Reference Design Specification
+The following sections describe the ways this solution deviates from the recommended https://docs.openshift.com/container-platform/4.16/scalability_and_performance/telco_ref_design_specs/core/telco-core-rds-overview.html[Telco-5G-Core 4.16 Reference Design Specification] configuration.
 
-This solution deviates from the Hub 4.16 Reference Design Specification in the following ways:
+=== CPU partitioning and performance tuning
 
-= Deviations from Red Hat NPSS Telco Network Cloud Reference Architecture
+* deviations related to Tuned CR and PerformanceProfiles
 
+=== Service mesh
+
+* deviations related OSSM configurations or versioning, eg., using OSSM 3.0 in TP?
+
+=== Networking
+
+* metallb with only OVN- in local gateway mode , sr-iov properly configured
+
+=== Logging
+
+=== Power Management
+
+=== Storage
+
+* anything different than ODF?
+
+=== Monitoring
+
+* any specific configuration deviating from Cluster Monitoring Operator?
+
+=== Scheduling
+
+* are we using the NUMA Resource Operator? NUMA config supported by RDS.
+
+=== Installation
+
+* Anything different than ABI?
+
+=== Security
+
+* any workload running with custom SCC or pods requiring root privilegess?
+
+=== Scalability
+
+* any deployment bigger than 120 nodes?
+
+
+=== Additional Configurations
+
+==== Kernel 
+
+* list of included drivers are validated in RDS?
+* any oot driver? 
+
+
+
+== Deviations from Red Hat Hub Reference Design Specification
+
+Introduce the deviations for incoming Hub Reference Design specification.
+This solution deviates from the Telco-5G Hub 4.16 Reference Design Specification in the following ways:
